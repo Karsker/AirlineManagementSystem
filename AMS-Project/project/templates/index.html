@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Welcome to AMS {% endblock %}
+{% block navbarItems %}
+<li>
+    <a href="{{ url_for('main.index') }}" class="active">Home</a>
+</li>
+<li>
+    <a href="">About</a>
+</li>
+<li>
+    <a href="{{ url_for('auth.login') }}">Login</a>
+</li>
+{% endblock %}
+{% block mainContent %}
+<h1>Welcome to AMS</h1>
+{% endblock %}

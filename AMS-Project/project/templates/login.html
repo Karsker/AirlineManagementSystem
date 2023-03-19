@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block navbarItems %}
+<li>
+    <a href="{{ url_for('main.index') }}" >Home</a>
+</li>
+<li>
+    <a href="">About</a>
+</li>
+<li>
+    <a href="{{ url_for('auth.login') }}" class="active">Login</a>
+</li>
+{% endblock %}
+{% block mainContent %}
+<main id="form-holder">
+    <h1>Login</h1>
+    <form id="login-form">
+        <input type="text" name="userid" id="userid-field" class="login-form-field" placeholder="User ID">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="submit" value="Login" id="login-form-submit">
+        <button id="signup-Btn"><a href="{{ url_for('auth.signup') }}" style="color:white">Sign Up</a></button>
+    </form>
+</main>
+{% endblock %}
