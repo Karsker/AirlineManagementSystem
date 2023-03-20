@@ -14,7 +14,7 @@
 {% block mainContent %}
 <main id="form-holder">
     <h1>Sign Up</h1>
-    <form id="login-form">
+    <form id="login-form" method="POST" action="/signup">
         <input type="text" name="userName" id="signup-name" class="login-form-field" placeholder="Name">
         <input type="text" name="userEmail" id="signup-email" class="login-form-field" placeholder="Email address">
         <input type="text" name="userContact" id="signup-contact" class="login-form-field" placeholder="Contact number">
